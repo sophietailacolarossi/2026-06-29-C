@@ -33,6 +33,7 @@ class View(ft.UserControl):
 
 
         self._ddArtista = ft.Dropdown(label="Artista")
+        self._controller.fillDDArtisti()
         self._txtInN = ft.TextField(label="Numero di artisti")
         self._btnSelezione = ft.ElevatedButton(text="Trova gruppo artisti",
                                               on_click=self._controller.handleSelezione)
